@@ -1,0 +1,1175 @@
+/* Osnovni reset in tipografija */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #79026d;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigacija */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+.active {
+    background-color: #b6007b;
+}
+
+/* Dropdown meni */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #b6007b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #6e6e6e;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-list {
+    list-style: none;
+
+}
+
+.footer-list li {
+    padding-bottom: 5px;
+
+}
+
+/* Banner */
+.banner {
+    background-image: url("../slike/ljudje.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Gumbi */
+.btn {
+    display: inline-block;
+    background-color: #b6007b;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #79026d;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #b6007b;
+    color: #b6007b;
+}
+
+.btn-outline:hover {
+    background-color: #b6007b;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #b6007b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #79026d;
+}
+
+/* Storitve */
+.storitve {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.storitve h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #79026d;
+}
+
+.storitve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.storitve-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px #b6007c3a;
+    transition: transform 0.3s;
+}
+
+.storitve-card:hover {
+    transform: translateY(-10px);
+}
+
+.storitve-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #79026d;
+}
+
+/* Kontaktna sekcija */
+.kontaktni {
+    background-color: #79026d;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.kontaktni h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.kontaktni p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Page title */
+.page-title {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-title h1 {
+    color: #79026d;
+    font-size: 2.5rem;
+}
+
+/* Main content */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Kontaktni obrazec */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #b6007c3a;
+}
+
+.contact-form h2 {
+    color: #79026d;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #b6007b;
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-col {
+    flex: 1;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Kontaktne informacije */
+.contact-info h2 {
+    color: #79026d;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-item h3 {
+    color: #79026d;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.info-item p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* O nas sekcije */
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #79026d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.column-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.column-text h3 {
+    color: #b6007b;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.column-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #444;
+    text-align: center;
+}
+
+/* Statistika */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    min-width: 200px;
+    max-width: 250px;
+    border: #b6007b 2px solid;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #79026d;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Insurance sekcije */
+.insurance-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.insurance-intro h2 {
+    color: #79026d;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.insurance-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+}
+
+.insurance-section {
+    margin-bottom: 60px;
+}
+
+.insurance-card {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #b6007c3a;
+    transition: transform 0.3s;
+}
+
+.insurance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #b6007c3a;
+}
+
+.insurance-icon {
+    background-color: #f0e8f0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 5px 15px #b6007c3a;
+}
+
+.insurance-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.insurance-content {
+    padding: 30px;
+}
+
+.insurance-content h2 {
+    color: #79026d;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.insurance-content p {
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Seznam značilnosti zavarovanja */
+.insurance-features {
+    margin-bottom: 25px;
+}
+
+.insurance-features h3 {
+    color: #b6007b;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.insurance-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.insurance-features li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.insurance-features li:before {
+    content: "✓";
+    color: #b6007b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* Izberi zavarovanje sekcija */
+.izbor-section {
+    background-color: #f0e8f0;
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.izbor-section h2 {
+    color: #79026d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.izbor-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.izbor-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cenik */
+.cenik-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cenik-intro h2 {
+    color: #79026d;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.cenik-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.price-list {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.price-list h3 {
+    color: #79026d;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.price-list dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.price-list dt {
+    font-weight: bold;
+    color: #79026d;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.price-list dd {
+    color: #444;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Kombinirani paketi */
+.package-list {
+    margin-bottom: 40px;
+}
+
+.package-list h3 {
+    color: #79026d;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.package {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.package:hover {
+    border-color: #b6007b;
+    transform: translateY(-5px);
+}
+
+.package h4 {
+    color: #79026d;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.package-price {
+    font-size: 1.8rem;
+    color: #b6007b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.package ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.package li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.package li:before {
+    content: "✓";
+    color: #b6007b;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.package ol {
+    margin-left: 20px;
+    color: #666;
+}
+
+.package ol li {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+
+.package ol li:before {
+    content: none;
+}
+
+/* Tabele */
+.comparison-section {
+    margin-bottom: 40px;
+}
+
+.comparison-section h3 {
+    color: #79026d;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.comparison-table,
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #b6007c3a;
+}
+
+.comparison-table th,
+.price-table th {
+    background-color: #79026d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.comparison-table td,
+.price-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+    background-color: #f0e8f0;
+}
+
+.price-table tr:hover {
+    background-color: #b6007b;
+}
+
+.feature-name {
+    text-align: left !important;
+    font-weight: bold;
+    color: #333;
+}
+
+.category-row {
+    background-color: #b6007b;
+    color: white;
+    font-weight: bold;
+}
+
+.category-row td {
+    text-align: center !important;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Zaposleni */
+.team-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-intro h2 {
+    color: #79026d;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.team-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #b6007c3a;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.member-photo {
+    width: 100%;
+    flex: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.member-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.member-info h3 {
+    color: #79026d;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.member-position {
+    color: #b6007b;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.member-description {
+    color: #444;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+/* Pogoji zavarovanja */
+.terms-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.terms-intro h2 {
+    color: #79026d;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.terms-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.terms-section {
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #b6007c3a;
+}
+
+.terms-section h2 {
+    color: #79026d;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #b6007b;
+    padding-bottom: 10px;
+}
+
+.terms-content h3 {
+    color: #b6007b;
+    font-size: 1.3rem;
+    margin: 25px 0 15px 0;
+}
+
+.terms-content p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.rights-obligations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.rights-section h3,
+.obligations-section h3 {
+    color: #b6007b;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.terms-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.terms-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.terms-list li:before {
+    content: "•";
+    color: #b6007b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.exclusions-section {
+    background-color: #e8c6c6;
+    border-left: 4px solid #dc3545;
+}
+
+.exclusions-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exclusions-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.exclusions-list li:before {
+    content: "⚠";
+    color: #dc3545;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1rem;
+}
+
+.insurance-specific {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.specific-terms h3 {
+    color: #b6007b;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.specific-terms p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Mapa in hr */
+#map {
+    height: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+hr {
+    color: #e2047a;
+    height: 5px;
+    background-color: #e2047a;
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* iframe */
+iframe {
+    display: block;
+    width: 80%;
+    height: 800px;
+    margin: 20px auto;
+    border: #b6007b 2px solid;
+}
+
+/* FAQ */
+.faq-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 2px 10px #79026d33;
+}
+
+.faq-item h3 {
+    color: #79026d;
+    margin-bottom: 10px;
+}
+
+.faq-item p,
+.faq-item ul {
+    color: #444;
+    line-height: 1.6;
+}
+
+.faq-category h2 {
+    color: #79026d;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #b6007b;
+    padding-bottom: 10px;
+}
+
+.faq-answer {
+    padding-left: 20px;
+}
+
+/* Mnenja strank */
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px #b6007c3a;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #b6007b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.review-info h3 {
+    color: #79026d;
+    margin-bottom: 5px;
+}
+
+.review-meta {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    margin-bottom: 15px;
+}
+
+.star {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.star.empty {
+    color: #ddd;
+}
+
+.review-text {
+    color: #444;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* Novice */
+.news-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #79026d33;
+    transition: transform 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-header {
+    background-color: #79026d;
+    color: white;
+    padding: 20px;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.news-content {
+    padding: 30px;
+}
+
+.news-text {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.news-sidebar {
+    background-color: #f0e8f0;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.sidebar-title {
+    color: #79026d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-left: 4px solid #b6007b;
+}
+
+.sidebar-item h4 {
+    color: #79026d;
+    margin-bottom: 8px;
+}
+
+.sidebar-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.sidebar-date {
+    color: #b6007b;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
