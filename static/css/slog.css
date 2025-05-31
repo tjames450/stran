@@ -1196,4 +1196,42 @@ iframe {
   .izbor-buttons {
     flex-direction: column;
   }
+
+    .comparison-table,
+    .price-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .comparison-table thead,
+    .price-table thead {
+        display: none;
+    }
+
+    .comparison-table tr,
+    .price-table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #b6007b;
+        padding: 10px 0;
+    }
+
+    .comparison-table td,
+    .price-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+
+    .comparison-table td::before,
+    .price-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #79026d;
+        min-width: 120px;
+        display: inline-block;
+    }
 }
